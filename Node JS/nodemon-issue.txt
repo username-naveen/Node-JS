@@ -1,0 +1,18 @@
+if you face a issue while running "nodemon <filename>.js" that results in
+
+nodemon : File C:\Users\Naveen\AppData\Roaming\npm\nodemon.ps1 cannot be loaded because running scripts is disabled on this system. For more information, see about_Execution_Policies at 
+https:/go.microsoft.com/fwlink/?LinkID=135170.
+At line:1 char:1
++ nodemon apps.js
++ ~~~~~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+
+Solution:
+    --> Open Powershell as Administrator
+    --> Run Set-Execution Unrestricted
+    --> Choose option accordingly and enter
+
+Try running the nodemon command now. 
+
+The problem should be solved. 
